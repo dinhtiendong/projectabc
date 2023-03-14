@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.left{
+  background:url('./shoe-head.jpg') no-repeat;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  background-size: cover;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
