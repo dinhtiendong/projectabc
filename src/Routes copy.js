@@ -24,31 +24,27 @@
 import Dashboard from "./views/dashboard/Index.jsx";
 import ProductAdd from "./views/products/Add.jsx";
 import UserRegister from "./views/users/Register.js";
-import UserLogin from "./views/users/Login.jsx";
 var routes = [
   {
     path: "/dashboard/index",
     name: "Dashboard",
+    icon: "ni ni-tv-2 text-primary",
     component: Dashboard,
     layout: "/admin"
   },
   {
     path: "/products/add",
-    name: "ProductAdd",
+    name: "A",
+    icon: "ni ni-planet text-blue",
     component: ProductAdd,
     layout: "/admin"
   },
   {
-    path: "/register",
-    name: "AuthRegister",
+    path: "/users/add",
+    name: "Icons",
+    icon: "ni ni-planet text-blue",
     component: UserRegister,
-    layout: "AuthLayout"
-  },
-  {
-    path: "/login",
-    name: "AuthLogin",
-    component: UserLogin,
-    layout: "AuthLayout"
+    layout: "/auth"
   },
 ];
 export default routes;
