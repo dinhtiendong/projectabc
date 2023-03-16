@@ -1,6 +1,5 @@
 import React from "react";
-import {BrowserRouter,Routes,Route,Link,utlet,useLocation} from "react-router-dom";
-import { Container, Row} from "reactstrap";
+import {Routes,Route,useLocation} from "react-router-dom";
 import rroutes from "../routes.js";
 
 import "../assets/css/sb-admin-2.min.css";

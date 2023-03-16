@@ -14,7 +14,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" exact  element={<h1>JGLDSGD</h1>} />
-      <Route path="/admin/*" element={(props) => <AdminLayout {...props} />} />
+      <Route path="/modules/*" element={<AdminLayout/>} />
       <Route path="/auth/*" element={<AuthLayout/>}></Route>
     </Routes>
   </BrowserRouter>
