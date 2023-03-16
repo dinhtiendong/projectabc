@@ -1,6 +1,6 @@
 import React from "react";
 import {Routes,Route,useLocation} from "react-router-dom";
-import rroutes from "../routes.js";
+import rroutes from "../routes/auth.jsx";
 
 import "../assets/css/sb-admin-2.min.css";
 
