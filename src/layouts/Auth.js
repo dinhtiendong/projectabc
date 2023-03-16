@@ -2,6 +2,9 @@ import React from "react";
 import {BrowserRouter,Routes,Route,Link,utlet,useLocation} from "react-router-dom";
 import { Container, Row} from "reactstrap";
 import rroutes from "../routes.js";
+
+import "../assets/css/sb-admin-2.min.css";
+
 const Auth = (props) => {  
     const mainContent = React.useRef(null);
     const location = useLocation();
@@ -31,9 +34,11 @@ const Auth = (props) => {
     return (
       <>
       <div className="main-content" ref={mainContent}>
-        <Routes>
-            {getRoutes(rroutes)}
-        </Routes>
+        <div className="App" id="wrapper">
+          <Routes>
+              {getRoutes(rroutes)}
+          </Routes>
+          </div>
        </div>
       </>
     );
