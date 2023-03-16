@@ -3,6 +3,9 @@ import {Routes,Route,useLocation} from "react-router-dom";
 // reactstrap components
 import "../assets/css/sb-admin-2.min.css";
 import routes from "../routes/modules.jsx";
+import Sidebar from '../components/Navigation/Sidebar';
+import Topbar from '../components/Navigation/Topbar';
+
 console.log(routes);
 const Admin = (props) => {
     const mainContent = React.useRef(null);
@@ -33,9 +36,17 @@ const Admin = (props) => {
       <>
         <div className="main-content" ref={mainContent}>
           <div className="App" id="wrapper">
-            <Routes>
-              {getRoutes(routes)}
-            </Routes>
+            <Sidebar />
+            <div id="content-wrapper" className="d-flex flex-column">
+              <div id="content">
+                <Topbar />
+                <div className="container-fluid">
+                <Routes>
+                  {getRoutes(routes)}
+                </Routes>
+                </div>
+              </div>
+            </div>
           </div>  
         </div>
       </>

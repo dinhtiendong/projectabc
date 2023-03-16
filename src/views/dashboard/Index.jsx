@@ -4,23 +4,21 @@ import {Link, withRouter} from 'react-router-dom';
 const Login = () => {
   return (
     <>
-      <div className="container">
-            {/* <!-- Outer Row --> */}
-            <div className="row justify-content-center">
+      <div className="row justify-content-center">
         
-              <div className="col-xl-10 col-lg-12 col-md-9">
-        
-                <div className="card o-hidden border-0 shadow-lg my-5">
-                  <div className="card-body p-0">
-                    Day la trang dashboard
-                  </div>
-                </div>
-        
-              </div>
-        
-            </div>
-        
+        <div className="col-12">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
           </div>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Hello World</h6>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
     </>
   );
 };
