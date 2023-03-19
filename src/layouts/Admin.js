@@ -2,6 +2,7 @@ import React from "react";
 import {Routes,Route,useLocation} from "react-router-dom";
 // reactstrap components
 import "../assets/css/sb-admin-2.min.css";
+import "../assets/css/font-awesome/css/all.css";
 
 import routes from "../routes/modules.jsx";
 import Sidebar from '../components/Navigation/Sidebar';
